@@ -1,12 +1,9 @@
 import { Component } from 'angular2/core';
 
-const template = require('./app.component.jade');
-const style = require('./app.component.styl');
-
 @Component({
     selector: 'angular2',
-    styles: [style],
-    template,
+    styles: [require('./app.component.styl')],
+    template: require('./app.component.jade'),
 })
 class AppComponent {
   title: string = 'ng2-webpack example';
